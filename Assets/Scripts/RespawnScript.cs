@@ -50,6 +50,13 @@ public class RespawnScript : MonoBehaviour
                 this.desObj.SetActive(true);
                 this.desObj.transform.position = pos3;
             }
+            else if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                time = 0.0f;
+                isRespon = false;
+                this.desObj.SetActive(true);
+                this.desObj.transform.position = CameraScript.pos;
+            }
 
         }
     }
